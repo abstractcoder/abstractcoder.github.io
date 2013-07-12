@@ -1,5 +1,5 @@
 ---
-title: Using Bower With Middleman through Sprockets
+title: Using Bower With Middleman Through Sprockets
 layout: post
 ---
 
