@@ -90,7 +90,7 @@ TestDaemon.mainloop
 
 This script simply writes to a file named log.txt, which is in the same directory as service.rb. For more information read the "Win32 Daemon documentation":http://rubyforge.org/docman/view.php/85/596/daemon.html.
 
-Finally, I wrote a script that stops the service if its running, and also delets it.
+Finally, I wrote a script that stops the service if its running, and also deletes it.
 
 h3. unregister.rb
 
