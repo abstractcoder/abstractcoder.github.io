@@ -1,8 +1,18 @@
+html {
+  font: 125%/1.5 proxima-nova, 'helvetica neue', helvetica, arial;
+  color: #2d2d2d;
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 a { color: #246873; text-decoration: none; }
 .highlight pre { width: 100%; overflow-x: scroll; padding: 1rem; background: #eee; }
 
 .meta { color: #777; }
-html { color: #333; }
 
 h1 { margin-top: 40px; font-size: 3rem; }
 h2 { margin-bottom: 0; line-height: 1.5; font-size: 1.25rem; font-weight: bold; }

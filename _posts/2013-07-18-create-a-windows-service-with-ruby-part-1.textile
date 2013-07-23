@@ -31,7 +31,7 @@ Service.create({
   error_control: Service::ERROR_NORMAL,
   binary_path_name: "#{`where ruby`.chomp} -C #{`echo %cd%`.chomp} service.rb",
   load_order_group: 'Network',
-  dependencies: [],
+  dependencies: nil,
   display_name: 'Test Service'
 })
 
@@ -107,7 +107,26 @@ rescue
 end
 
 Service.delete(SERVICE)
-
 {% endhighlight %}
 
 In Part 2, I will discuss how I used the "ocra gem":https://github.com/larsch/ocra to bundle the Ruby scripts into executables so they can be run on machines that don't have Ruby installed.
+
+*Update 7/23/2013*
+
+It seems that the Windows API doesn't like to receive an empty array for the service dependencies so I updated the code to pass nil instead.
+
+I have also run into an issue where the line
+
+{% highlight ruby %}
+if Service.stop(SERVICE) if Service.status(SERVICE).controls_accepted.include? "stop" 
+{% endhighlight %}
+
+seems to work in Windows 7, but not in Windows 8.1. I recommend stopping the service with
+
+{% highlight bash %}
+sc stop testservice
+{% endhighlight %}
+
+before running unregister.rb.
+
+Finally, I created a "GitHub repository":https://github.com/abstractcoder/example-ruby-windows-service for the example code.
