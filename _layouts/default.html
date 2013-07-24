@@ -5,6 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+        <meta name="description" content="Developer/Consultant Steve Johnson&rsquo;s Blog"/>
+        <link rel="canonical" href="http://abstractcoder.com/" />
+        <meta poperty="og:url" content="http://abstractcoder.com/" />
+        <meta property="twitter:creator" content="@abstract_coder" />
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:type" content="blog">
+        <meta property="og:description" content="Developer/Consultant Steve Johnson&rsquo;s Blog" />
+        <meta property="og:site_name" property="{{ site.name }}" />
         <link rel="shortcut icon" href="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=48" />
         <link rel="stylesheet" href="/css/toast.css">
         <link rel="stylesheet" href="/css/syntax.css">
@@ -40,6 +48,13 @@
               dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
           })();
+          
+          (function () {
+              var s = document.createElement('script'); s.async = true;
+              s.type = 'text/javascript';
+              s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+              (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
       </script>
       <script type="text/javascript">
         var _gaq = _gaq || [];
