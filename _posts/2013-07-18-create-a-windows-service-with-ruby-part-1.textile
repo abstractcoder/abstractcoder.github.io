@@ -1,7 +1,7 @@
 ---
 title: Create a Windows Service with Ruby - Part 1
 layout: post
-last_modified: 2013-07-22
+last_modified: 2013-08-02
 ---
 
 Recently I was tasked to create an application that needed to run in the background on a Windows machine, which seemed like the perfect job for a Windows Service. I've created Windows Services with .Net before but I wanted to try to create one with Ruby. It turns out that it was pretty easy to get a Windows Service up and running using Ruby.
@@ -110,7 +110,7 @@ end
 Service.delete(SERVICE)
 {% endhighlight %}
 
-In Part 2, I will discuss how I used the "ocra gem":https://github.com/larsch/ocra to bundle the Ruby scripts into executables so they can be run on machines that don't have Ruby installed.
+In "Part 2":http://abstractcoder.com/2013/08/02/create-a-windows-service-with-ruby-part-2.html, I will discuss how I used the "ocra gem":https://github.com/larsch/ocra to bundle the Ruby scripts into executables so they can be run on machines that don't have Ruby installed.
 
 *Update 7/23/2013*
 

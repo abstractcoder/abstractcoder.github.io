@@ -29,6 +29,11 @@ h2 { margin-bottom: 0; line-height: 1.5; font-size: 1.25rem; font-weight: bold; 
   border: none;
 }
 
+blockquote {
+  margin-left: 20px;
+  font-style: italic;
+}
+
 @media screen and (max-width: 920px) {
   h1 { font-size: 2rem; }
 }

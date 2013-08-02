@@ -8,7 +8,7 @@ Location: Milwaukee, Wisconsin, United States
 
 /* THANKS */
 Company: http://logicalengine.com
-Hosting Company: http://github.com
+Hosting: http://github.com
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
