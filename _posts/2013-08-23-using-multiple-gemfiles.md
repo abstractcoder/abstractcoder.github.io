@@ -39,7 +39,7 @@ bundle install --gemfile Gemfile.tools --binstubs
 Then you can access your gems through your project's bin directory
 
 ```bash
-bin/command ...
+bin/...
 ```
 
 By creating two separate Gemfiles I was able to harness the power of Bundler while keeping my project and toolchain Gems separate.
