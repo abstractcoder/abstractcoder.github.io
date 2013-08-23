@@ -1,0 +1,9 @@
+---
+title: Easy Rails Deployment Stack Using Chef
+layout: post
+---
+
+
+Currently I'm working on a Rails deployment stack with the goal of deploying small projects to a single $5-$10 VPS with the ease of Heroku. Heroku is great for scaling mid to large projects but for small projects that need two web dynos, a background worker, a small database, and SSL the hosting cost is already in the $100+/month range. For small projects I can get roughly the same performance from a $10 VPS. 
+
+Since my goal for this project is ease of use I wanted a user to get it up and running as easily as possible. The problem is that some of the 
