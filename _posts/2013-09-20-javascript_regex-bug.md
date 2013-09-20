@@ -9,8 +9,9 @@ It turns out the issue has to do with enabling global search on the regular expr
 
 In the case where there is only one match in the string the test method will fail every other time. In the case of two more matches, calls to test will return true once for every match, then return false.
 
-Here is some example code that illustrates this behavior
+Here is some example code that illustrates this behavior [http://jsfiddle.net/abstractcoder/gx5yh/](http://jsfiddle.net/abstractcoder/gx5yh/)
 
+###Code###
 ```javascript
 var output = "";
 
@@ -72,7 +73,5 @@ console.log(output);
 /a/i.test('a') is true
 /a/i.test('a') is true
 ```
-
-See it in action [http://jsfiddle.net/abstractcoder/gx5yh/](http://jsfiddle.net/abstractcoder/gx5yh/).
 
 The solution is to simply not specify global search when using a RegExp in conjunction with multiple calls to the test method.
