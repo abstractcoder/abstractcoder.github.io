@@ -58,4 +58,4 @@ angular.bootstrap document.getElementById('area-form'), ['templateApp']
 
 [JSFiddle Simple AngularJS Form](http://jsfiddle.net/abstractcoder/3jfk8/)
 
-This might seem like overkill for such a simple form, but I find it to be much cleaner and readable. As the forms and calculations grow in size and complexity that becomes much more important.
+This might seem like overkill for such a simple form, but I find it to be much cleaner and more readable. As the forms and calculations grow in size and complexity that becomes much more important.
