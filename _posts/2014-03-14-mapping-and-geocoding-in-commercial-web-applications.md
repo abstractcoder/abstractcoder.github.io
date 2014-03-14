@@ -1,0 +1,24 @@
+---
+title: Mapping and Geocoding in Commercial Web Applications
+layout: post
+---
+
+Mapping and geocoding is difficult to do in commercial web applications. Not technically difficult, but in terms of licensing. Many websites and applications use [Google Maps](https://developers.google.com/maps/), but if your app is not free or a native application commercial licensing fees are involved and they are hidden behind the wall of "if you have to ask you can't afford it." Other popular services such as Yahoo and Bing have the same problem. If you are a small company that has a web application you want to charge for your options become extremely limited.
+
+The project I'm working on is a [Rails](http://rubyonrails.org/) application. After researching and testing I decided to go with the  [Geocoder](https://github.com/alexreisner/geocoder) gem for geocoding and [Leaflet](http://leafletjs.com/) for creating the interactive maps. I chose these libraries because they support multiple services, allowing us to easily switch between or use multiple services side by side, and they are extremely easy to use. After picking the libraries I decided to keep my search limited to the services they support ([Geocoder Supported Services](https://github.com/alexreisner/geocoder#street-address-services), [Leaflet Supported Services](https://github.com/Leaflet/Leaflet/blob/master/FAQ.md#what-map-tiles-can-i-use-with-leaflet-is-it-limited-to-openstreetmap)). I also excluded any services that didn't have transparent pricing and terms.
+
+The first service I tested was [CloudMade](http://cloudmade.com/). They provide affordable geocoding and mapping with worldwide coverage. Unfortunately their services fell short for me. Their geocoding service often returns coordinates in the wrong country and the documentation for their non-beta [v2 Api (.pdf)](http://cloudmade.com/misc/geocoding_v2.pdf) seems incomplete. Cloudmade's Geocoding v3 beta service had fewer issues and better documentation, but isn't currently supported by the Geocoder gem.
+
+Next I tried OpenStreetMap's [Nominatim](http://nominatim.openstreetmap.org/) geocoding service. Nominatim is free to use according to the [Nominatim usage policy](http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy), but they also instruct users to limit their usage to no more than one request per second. If you need higher usage they point users to [MapQuest](http://www.mapquest.com/). 
+
+MapQuest provides a [Community Edition (Open Data)](http://developer.mapquest.com/web/tools/getting-started/terms-overview) that provides geocoding with OpenStreetMap data for free with no rate limit. In testing MapQuest geocoding seemed promising, but attempting to geocode user entered addresses had a success rate of only about 60%, even after ruling out mistyped or invalid addresses.
+
+I went into this looking for a service that would work worldwide, but at this point I decided to narrow my search to US only providers for two reasons, the project I'm working on currently only requires US coverage and the Geocoder gem supports multiple services so as we move into new areas we can select the best provider for each region.
+
+The first US only geocoding service I tested, [Geocodio](http://geocod.io/), hit it out of the park. They have [transparent pricing](http://geocod.io/pricing/) and they return coordinates for even the most rural addresses. On the small sample of addresses I tested Geocodio seems to be on par with what I get from querying Google. The only downside I've encountered so far is that Geocodio occasionally return coordinates for fake addresses in what I assume is an attempt to approximate a location. Accuracy is something I will be continually testing, but so far Geocodio seems like a good fit.
+
+For the mapping component I decided to go directly with [OpenStreetMap](http://www.openstreetmap.org/). The [OpenStreetMap terms](http://www.openstreetmap.org/about) are extremely permissive, they are worldwide, their map tiles look nice, and as far as I can tell they are one of the few (if only) free mapping services that [allow SSL](http://gis.19327.n5.nabble.com/HTTPS-SSL-enabled-on-tile-openstreetmap-org-td5793051.html), which is important if you are securing your web apps with SSL (like you should).
+
+I was able to get our mapping and geocoding features off the ground using a combination of OpenStreetMap, Geocodio, the Geocoder gem, and Leaflet. As we expand into new areas we will continue to test new services for accuracy as well as licensing terms that are a good fit for commercial web applications.
+
+If you have any experience implementing mapping and geocoding in a commercial web app, or if you have experience with other geocoding or mapping services I would like to hear from you in the comments!

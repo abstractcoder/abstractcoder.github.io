@@ -23,22 +23,30 @@
     <body>
       <div class="container">
         <div class="grid">
-          <header>
-            <div class="unit one-of-two">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            </div>
-            <div class="unit one-of-two bio">
-              <img src="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=70" />
-              <h3>Steve Johnson</h3>
-              <div>Developer / Consultant</div>
+          <div class="unit span-grid">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          </div>
+          <div class="unit two-of-three">
+  {{ content }}
+          </div>
+          <div class="unit one-of-three bio">
+            <img class="avatar" src="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=70" />
+            <h3>Steve Johnson</h3>
+            <p>Developer, Designer<br>Product Bootstrapper</p>
+            <p>
+              <h3>Work</h3>
+              <div><a href="http://www.logicalengine.com">Logical Engine</a></div>
+              <div><a href="http://www.estimaterocket.com">Estimate Rocket</a></div>
+            </p>
+            <p>
               <div>
                 <a href="http://twitter.com/abstract_coder/">Twitter</a>
+                |
                 <a href="http://github.com/abstractcoder/">GitHub</a>
+                |
                 <a href="http://www.linkedin.com/in/abstractcoder/">LinkedIn</a>
-            </div>
-          </header>
-          <div class="unit span-grid">
-{{ content }}
+              </div>
+            </p>
           </div>
         </div>
       </div>
