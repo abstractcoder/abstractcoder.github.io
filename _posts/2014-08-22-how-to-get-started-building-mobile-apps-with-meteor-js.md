@@ -3,6 +3,8 @@ title: How to Get Started Building Mobile Apps With Meteor
 layout: post
 ---
 
+![Meteor with Cordova](/assets/meteor-with-cordova.png)
+
 [Meteor](https://www.meteor.com/) [recently announced](https://www.youtube.com/watch?v=zzNoXbv1DX4&feature=youtu.be&t=23m54s) the ability to create mobile apps for iOS and Android using [Cordova](http://cordova.apache.org/). This short guide will show you how to get up and running quickly.
 
 To build an app for iOS first you will need to [install the latest version of Xcode](https://developer.apple.com/xcode/downloads/). 

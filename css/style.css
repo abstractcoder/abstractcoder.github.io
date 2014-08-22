@@ -37,3 +37,5 @@ blockquote {
   h1 { margin-top: 20px; font-size: 2rem; }
   .bio { text-align: left; }
 }
+
+img { max-width: 100%; }
