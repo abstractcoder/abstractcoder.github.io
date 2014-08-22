@@ -1,5 +1,5 @@
 name: AbstractCoder
 description: "Developer / Consultant Steve Johnson's Blog"
 url: http://abstractcoder.com
-pygments: true
+highlighter: pygments
 markdown: redcarpet
