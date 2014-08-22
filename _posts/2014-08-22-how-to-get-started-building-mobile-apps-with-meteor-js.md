@@ -15,11 +15,11 @@ If you don't have Meteor installed first open a terminal window and run
 curl https://install.meteor.com | /bin/sh
 ```
 
-Create a project called MobileDemo in the current directory
+Create a project called MobileTest in the current directory
 
 ```bash 
-meteor create MobileDemo
-cd MobileDemo
+meteor create MobileTest
+cd MobileTest
 ```
 
 Upgrade the Meteor project to use the Cordova Preview build
@@ -28,7 +28,7 @@ Upgrade the Meteor project to use the Cordova Preview build
 meteor update --release CORDOVA-PREVIEW@3
 ```
 
-The add the package required to build an iOS app
+Then add the package required to build an iOS app
 
 ```bash
 meteor add-platform ios
