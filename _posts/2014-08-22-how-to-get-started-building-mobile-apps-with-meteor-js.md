@@ -9,7 +9,9 @@ layout: post
 
 To build an app for iOS first you will need to [install the latest version of Xcode](https://developer.apple.com/xcode/downloads/). 
 
-If you want to build an app for Android you will need to [install the Android SDK](https://developer.android.com/sdk/installing/index.html).
+
+<del>If you want to build an app for Android you will need to [install the Android SDK](https://developer.android.com/sdk/installing/index.html)</del>. The Android Environment will be installed by Meteor during the build process so there is no need to manually set it up.
+
 
 If you don't have Meteor installed first open a terminal window and run
 
