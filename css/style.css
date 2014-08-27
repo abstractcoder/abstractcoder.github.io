@@ -16,8 +16,9 @@ a { color: #246873; text-decoration: none; }
 .highlight pre { width: 100%; overflow-x: scroll; padding: 0.5rem; background: #eee; font-size: 12px; }
 .meta { color: #777; }
 
-h1 { margin-top: 40px; font-size: 3rem; }
-h2 { margin-bottom: 0; line-height: 1.5; font-size: 1.25rem; font-weight: bold; }
+h1.title { margin: 40px 0 0 0; font-size: 3rem; }
+h2.title { margin-bottom: 0; line-height: 1.5; font-size: 1.25rem; font-weight: bold; }
+h2.subtitle { margin: 0; font-size: 1.25rem; color: gray; margin-bottom: 20px; }
 
 .post {
   border-bottom: 1px dashed #333;
