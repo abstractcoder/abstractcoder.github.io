@@ -23,7 +23,7 @@ Next create a new project using the todo example and change to the new project d
 
 ```bash 
 meteor create --example todos
-cd todo
+cd todos
 ```
 
 To build an app for iOS first you will need to [install the latest version of Xcode](https://developer.apple.com/xcode/downloads/). 
