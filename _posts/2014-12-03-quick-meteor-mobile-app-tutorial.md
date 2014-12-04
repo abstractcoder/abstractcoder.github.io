@@ -22,7 +22,7 @@ meteor update
 Next create a new project using the todo example and change to the new project directory
 
 ```bash 
-meteor create --example todo
+meteor create --example todos
 cd todo
 ```
 
