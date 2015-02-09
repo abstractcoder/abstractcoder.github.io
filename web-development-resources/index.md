@@ -9,8 +9,6 @@ Below is a list of web development resources I find useful. I'm always looking f
 
 ## Hosting
 
-### [WP Engine](http://www.shareasale.com/r.cfm?b=394686&u=990413&m=41388&urllink=&afftrack=)
-My company chose WP Engine to host [EstimateRocket.com](http://www.estimaterocket.com) because we wanted something fast, reliable, and scalable. After self hosting Wordpress sites for years and trying some less reputable hosted Wordpress services its great to no longer have to worry about uptime or maintenance.
 ### [Heroku](http://www.heroku.com)
 I use Heroku to host any Ruby on Rails app I develop that needs to scale. I stick with Heroku because you can get up and running quickly and don't have to worry about scalability, maintenance, or downtime.
 ### [Digital Ocean](https://www.digitalocean.com/?refcode=1a3f0906ff44)
