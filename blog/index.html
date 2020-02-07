@@ -1,0 +1,14 @@
+---
+layout: default
+title: Web and Mobile Development Blog
+---
+
+{% for post in site.posts %}
+  <div class="post">
+    <h2 class="title">{{ post.title }}</h2>
+    <p class="meta">{{ post.date | date: "%B %e, %Y" }}</p> 
+    {{ post.content }}
+    <p><a href="{{ post.url }}#disqus_thread">View Comments</a></p>
+  </div>
+  <!-- <hr/> -->
+{% endfor %}

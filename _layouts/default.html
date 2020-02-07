@@ -9,13 +9,13 @@
         <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
         <meta property="twitter:creator" content="@abstract_coder" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:image" content="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=50" />
+        <meta property="og:image" content="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=50" />
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:type" content="blog">
         <meta property="og:description" content="{{ site.description }}" />
         <meta property="og:site_name" property="{{ site.name }}" />
         <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
-        <link rel="shortcut icon" href="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=48" />
+        <link rel="shortcut icon" href="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=48" />
         <link rel="stylesheet" href="/css/toast.css">
         <link rel="stylesheet" href="/css/syntax.css">
         <link rel="stylesheet" href="/css/style.css">
@@ -23,38 +23,24 @@
     <body>
       <div class="container">
         <div class="grid">
-          <div class="unit span-grid">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <h2 class="subtitle">// Web and Mobile Development Blog</h2>
+          <div class="unit span-grid" style="padding: 20px 0;">
+            <h3>
+              <a href="/">About</a>
+              <a href="/blog/">Blog</a>
+            </h3>
           </div>
           <div class="unit two-of-three">
-  {{ content }}
+
+            {{ content }}
           </div>
           <div class="unit one-of-three bio">
-            <img class="avatar" src="http://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=70" />
+            <img class="avatar" src="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=70" />
             <h3>Steve Johnson</h3>
-            <p>Developer, Designer<br>Product Bootstrapper</p>
-            <p>
-              <h3>Site</h3>
-              <div><a href="/">Home</a></div>
-              <div><a href="/web-development-resources">Web Development<br/>Resources</a></div>
-            </p>
-            <p>
-              <h3>Work</h3>
-              <div><a href="http://www.estimaterocket.com">Estimate Rocket</a></div>
-              <div><a href="http://www.awesomedash.com">Awesome Dash</a></div>
-              <div><a href="http://www.awesomecontact.com">Awesome Contact</a></div>
-              <div><a href="http://www.logicalengine.com">Logical Engine</a></div>
-              <div><a href="http://www.getestimating.com">QSEI</a></div>
-            </p>
-            <p>
-              <h3>Social</h3>
-              <div>
-                <div><a href="http://twitter.com/abstractcoder/">@abstractcoder</a></div>
-                <div><a href="http://github.com/abstractcoder/">GitHub</a></div>
-                <div><a href="http://www.linkedin.com/in/abstractcoder/">LinkedIn</a></div>
-              </div>
-            </p>
+            <div>Full Stack Engineer</div>
+            <div>Product Developer</div>
+            <a href="https://github.com/abstractcoder/">GitHub</a>
+            <a href="https://www.linkedin.com/in/abstractcoder/">LinkedIn</a>
+            <a href="https://twitter.com/abstractcoder/">Twitter</a>
           </div>
         </div>
       </div>
@@ -69,7 +55,7 @@
           (function () {
               var s = document.createElement('script'); s.async = true;
               s.type = 'text/javascript';
-              s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+              s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
               (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
           }());
       </script>

@@ -1,14 +1,32 @@
 ---
 layout: default
-title: Web and Mobile Development Blog
+title: Steve Johnson - Full Stack Engineer and Product Developer
 ---
 
+
+<h1>Hi, I'm Steve Johnson</h1>
+
+<p>
+  I'm a full stack engineer and product developer.
+  I've <a href="https://www.logicalengine.com">founded a company</a>, built products from the ground up, and <a href="https://www.estimaterocket.com">developed a recurring revenue software business</a>.
+  I love building for the web, using tools like <a href="https://www.ruby-lang.org/en/">Ruby</a>, <a href="https://rubyonrails.org/">Rails</a>, <a href="https://stimulusjs.org/">Stimulus</a>, <a href="https://elixir-lang.org/">Elixir</a>, <a href="https://www.phoenixframework.org/">Phoenix</a>, and <a href="https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html">Live View</a>.
+  I'm always looking to collaborate.
+</p>
+
+
+<h3>Articles</h3>
 {% for post in site.posts %}
-  <div class="post">
-    <h2 class="title">{{ post.title }}</h2>
-    <p class="meta">{{ post.date | date: "%B %e, %Y" }}</p> 
-    {{ post.content }}
-    <p><a href="{{ post.url }}#disqus_thread">View Comments</a></p>
+  <div>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </div>
-  <!-- <hr/> -->
 {% endfor %}
+
+<br>
+
+<h3>Formerly</h3>
+<div><a href="https://www.estimaterocket.com">Estimate Rocket</a></div>
+<div><a href="https://www.logicalengine.com">Logical Engine</a></div>
+<div><a href="https://www.visionaryapps.com/">Visionary Apps</a></div>
+<div><a href="https://www.brillianceweb.com/">Brilliance Business Solutions</a></div>
+
+<br>

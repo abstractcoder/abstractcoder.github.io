@@ -2,13 +2,12 @@
 ---
 /* TEAM */
 Your title: Steve Johnson
-Site: http://abstractcoder.com
-Twitter: abstract_coder
+Site: https://abstractcoder.com
+Twitter: abstractcoder
 Location: Milwaukee, Wisconsin, United States
 
 /* THANKS */
-Company: http://logicalengine.com
-Hosting: http://github.com
+Hosting: https://github.com
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}

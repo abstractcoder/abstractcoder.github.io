@@ -11,7 +11,7 @@ In the case where there is only one match in the string the test method will fai
 
 Here is some example code that illustrates this behavior [http://jsfiddle.net/abstractcoder/gx5yh/](http://jsfiddle.net/abstractcoder/gx5yh/)
 
-###Code###
+### Code
 ```javascript
 var output = "";
 
@@ -37,7 +37,7 @@ for (var i=0; i < 10; i++) {
 console.log(output);
 ```
 
-###Output###
+### Output
 
 ```
 /a/gi.test('a') is true
