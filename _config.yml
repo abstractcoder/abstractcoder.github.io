@@ -2,4 +2,4 @@ name: AbstractCoder
 description: "Developer / Consultant Steve Johnson's Blog"
 url: http://abstractcoder.com
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
