@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
-        <meta content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+        <meta content="width=device-width, minimum-scale=1" name="viewport" />
         <meta name="description" content="{{ site.description }}"/>
         <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
         <meta property="twitter:creator" content="@abstractcoder" />
         <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:image" content="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=50" />
+        <meta property="og:image" content="https://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=50" />
         <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:type" content="blog">
         <meta property="og:description" content="{{ site.description }}" />
         <meta property="og:site_name" property="{{ site.name }}" />
         <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
-        <link rel="shortcut icon" href="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=48" />
-        <link rel="stylesheet" href="/css/toast.css">
-        <link rel="stylesheet" href="/css/syntax.css">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="https://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=48" />
+        <link rel="stylesheet" href="/css/site.css">
     </head>
     <body>
       <div class="container">
@@ -33,7 +31,7 @@
             {{ content }}
           </div>
           <div class="unit one-of-three bio">
-            <img class="avatar" src="//www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=200" />
+            <img class="avatar" src="https://www.gravatar.com/avatar/ad42c31dedc3100ed38b44f0532e6173.png?s=200" alt="Steve Johnson" />
             <h3>Steve Johnson</h3>
             <div>Full Stack Engineer</div>
             <div>Product Developer</div>
@@ -42,21 +40,6 @@
             <a href="https://twitter.com/abstractcoder/">Twitter</a>
           </div>
         </div>
-      </div>
-      <script type="text/javascript">
-          var disqus_shortname = 'abstract-coder';
-          (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-          
-          (function () {
-              var s = document.createElement('script'); s.async = true;
-              s.type = 'text/javascript';
-              s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
-              (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-          }());
-      </script>
+      </div>                     
     </body>
 </html>
